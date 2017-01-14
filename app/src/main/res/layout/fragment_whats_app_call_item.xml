@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_rick_deckard"
+        android:padding="5pt"
+        android:paddingRight="1pt"
+        android:layout_marginRight="0pt"
+        android:id="@+id/imageView"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="330dp"
+        android:paddingBottom="7pt"
+        android:paddingTop="7pt"
+        android:paddingLeft="1pt"
+        android:layout_marginLeft="0pt"
+        android:paddingRight="0dp"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.9">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elgin Ankpinar"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/item_main_text_size"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" >
+
+                <ImageView
+                    android:layout_width="6pt"
+                    android:layout_height="6pt"
+                    android:src="@drawable/ic_call_arrow"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="2pt"
+                    android:id="@+id/callArrow" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/subText"
+                    android:text="Yesterday 12:00"
+                    android:textSize="@dimen/item_sub_text_size"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/ic_reg_call_normal"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="0dp"
+            android:id="@+id/imageView2" />
+
+    </LinearLayout>
+</LinearLayout>

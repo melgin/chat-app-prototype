@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_rick_deckard"
+        android:padding="5pt"
+        android:paddingRight="1pt"
+        android:layout_marginRight="0pt"
+        android:id="@+id/imageView"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="330dp"
+        android:paddingBottom="7pt"
+        android:paddingTop="7pt"
+        android:paddingLeft="1pt"
+        android:layout_marginLeft="0pt"
+        android:paddingRight="0dp"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.96">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elgin Akpinar"
+                android:textSize="@dimen/item_main_text_size"
+                android:textColor="@color/mainText"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/subText"
+                android:text="Hello"
+                android:textSize="@dimen/item_sub_text_size"
+                android:textAppearance="?attr/textAppearanceListItem" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/messageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/subText"
+            android:layout_marginTop="2dp"
+            android:text="12:00"
+            android:textSize="@dimen/item_sub_text_size"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+    </LinearLayout>
+</LinearLayout>
